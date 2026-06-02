@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Community Event Portal</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="mainHeader">
+        <h1>Community Event Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#bulletin">Bulletin</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#help">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2 style="color: #ff0000;">City Council Announcements</h2>
+            
+            <div id="welcomeBanner">
+                <h3>Welcome Back, Resident!</h3>
+                <p>Don't miss our <span style="color: #ff3333; font-weight: bold; text-transform: uppercase;">Special Offer:</span> Register early for VIP seating!</p>
+            </div>
+            <p>Welcome to your community portal. Check out the <span class="highlight">important events</span> listed below and save your spot today.</p>
+        </section>
+        
+        <section id="events">
+            <h2>Upcoming Community Events</h2>
+            
+            <div class="eventCard">
+                <table>
+                    <caption>Schedule and Past Events Summary</caption>
+                    <thead>
+                        <tr>
+                            <th>Event Image</th>
+                            <th>Event Name</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=150&h=150&fit=crop" alt="Music Festival" title="Music Festival"></td>
+                            <td>Annual Music Festival</td>
+                            <td>Central Park Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?q=80&w=150&h=150&fit=crop" alt="Farmers Market" title="Farmers Market"></td>
+                            <td>Weekend Farmers Market</td>
+                            <td>Downtown Square</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=150&h=150&fit=crop" alt="Town Clean-up" title="Town Clean-up"></td>
+                            <td>Neighborhood Clean-up</td>
+                            <td>Community Center Area</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=150&h=150&fit=crop" alt="Art Showcase" title="Art Showcase"></td>
+                            <td>Local Art Exhibition</td>
+                            <td>City Council Gallery</td>
+                        </tr>
+                    </tbody>
+                    </table>
+            </div>
+        </section>
+
+        <section id="bulletin">
+            <h2>Community Bulletin & News</h2>
+            <article class="news-article">
+                <h3>Council Monthly Update</h3>
+                <p>Our local city council is introducing several green initiatives this month. We are planning to expand public parks, add more bicycle lanes, and host bi-weekly recycling drives. Residents are highly encouraged to participate in these programs to make our neighborhood cleaner and more sustainable for future generations.</p>
+                <p>Additionally, funding has been approved for the upcoming autumn festival. Volunteers are needed for setting up food stalls, managing guest registrations, and coordinating local artist performances. If you are interested in volunteering, please drop a message using our registration form or visit the town administration office during standard working hours.</p>
+            </article>
+        </section>
+
+        <section id="registration">
+            <h2>Event Registration Form</h2>
+            <form>
+                <div class="form-field">
+                    <label>Full Name:</label>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                
+                <div class="form-field">
+                    <label>Email Address:</label>
+                    <input type="email" placeholder="name@example.com" required>
+                </div>
+                
+                <div class="form-field">
+                    <label>Preferred Date:</label>
+                    <input type="date" required>
+                </div>
+                
+                <div class="form-field">
+                    <label>Event Type:</label>
+                    <select required>
+                        <option value="">--Select an Event--</option>
+                        <option value="music">Music Festival</option>
+                        <option value="market">Farmers Market</option>
+                        <option value="art">Art Exhibition</option>
+                    </select>
+                </div>
+                
+                <div class="form-field">
+                    <label>Special Notes / Feedback:</label>
+                    <textarea placeholder="Leave your comments here..."></textarea>
+                </div>
+                
+                <button type="submit" class="cta-button">Submit Registration</button>
+                <button type="button" class="cta-button hide-element">Hidden Reset Button</button>
+
+                <p>
+                    <output>Your registration status will appear here after submission.</output>
+                </p>
+            </form>
+        </section>
+
+        <section id="help">
+            <h2>Portal Help & Documentation</h2>
+            <h3>Frequently Asked Questions</h3>
+            <p><strong>How do I register for an event?</strong><br> Navigate to the Registration page, fill out the required text fields, and click the submit button.</p>
+            <p><strong>Are these events free?</strong><br> Some events like the Farmers Market are free, while others require admission fees listed on the portal details.</p>
+            <p><strong>Need further assistance?</strong><br> Please visit the town administration office during standard city council working hours.</p>
+        </section>
+
+        <section id="video">
+            <h2>Event Promo Video</h2>
+            <video width="100%" max-width="400" controls>
+                <!-- <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> -->
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="location">
+            <h2>Event Mapping</h2>
+            <button type="button" class="cta-button">Find Nearby Events</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Local Community Event Portal. Built for City Council Residents.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
